@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+
+<script>
+
+    let imoveis = [];
+    let tipo = "";
+    let cidade = "";
+    let estado = "";
+    let preco = 0;
+    let continuar = 0;
+
+    do {
+        tipo = prompt("Digite o tipo do imovel: ");
+        cidade = prompt("Informe a cidade do imovel: ");
+        estado = prompt("Informe o estado do imovel: ");
+        preco = Number(prompt("Informe o preco do imovel: "));
+        continuar = Number(prompt("Deseja continuar ? 0 = não . 1 = sim"));
+
+        imoveis.push({ "tipo": tipo, "cidade": cidade, "estado": estado, "preco": preco });
+
+    } while (continuar == 1);
+
+    for (const imovel of imoveis) {
+        console.log(`${imovel.tipo} - ${imovel.cidade} - ${imovel.estado} - ${imovel.preco}`);
+    }
+
+</script>
