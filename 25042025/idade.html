@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando LocalStorage</title>
+</head>
+<body>
+    <script>
+        let idade = localStorage.getItem("idade");
+        if (idade == null) {
+            idade = 1;
+            localStorage.setItem("idade", idade);
+        } else {
+            idade++;
+            localStorage.setItem("idade", idade);
+        }
+        alert("Sua idade é " + idade);
+    </script>
+    
+</body>
+</html>
