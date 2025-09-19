@@ -1,0 +1,15 @@
+<script>
+
+    const lado1 = Number(prompt("Informe o valor do 1º lado: "));
+    const lado2 = Number(prompt("Informe o valor do 2º lado: "));
+    const lado3 = Number(prompt("Informe o valor do 3º lado: "));
+
+    if (lado1 == lado2 && lado2 == lado3) {
+        alert("Triangulo equilatero");
+    } else if (lado1 == lado2 && lado3 != lado1 && lado3 != lado2 || lado1 == lado3 && lado2 != lado1 && lado3 != lado2 || lado2 == lado3 && lado2 != lado1 && lado3 != lado1) {
+        alert("Triangulo isósceles");
+    } else {
+        alert("Triangulo escaleno");
+    }
+
+</script>

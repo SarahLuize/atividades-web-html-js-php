@@ -1,0 +1,17 @@
+<script>
+    const via = Number(prompt("Informe a velocidade da via: "));
+    const carro = Number(prompt("Informe a velocidade do carro: "));
+    let multa = 0;
+    
+    multa = Math.abs(100 - ((carro*100) / via)); // regra de três + função para tirar o sinal da conta.
+
+    if (carro <= via) {
+        alert("Sem multa!");
+    } else if(multa <= 20) {
+        alert("Multa leve!");
+    }
+    else {
+        alert("Multa grave!");
+    }
+
+</script>

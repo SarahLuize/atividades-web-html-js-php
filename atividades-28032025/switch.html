@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de pizzaria</title>
+</head>
+<h1>Taxa entrega da Pizzaria</h1>
+<body>
+    <script>
+        let bairro = prompt("Bairro de Entrega: ");
+        bairro = bairro.trim().toLocaleLowerCase(); // Retira os espaços e deixa tudo em minúsculo
+        let taxaEntrega;
+        switch (bairro) {
+            case "centro":
+                taxaEntrega = 5.00;
+                break;
+            case "rau":
+                taxaEntrega = 7.00;
+                break;
+            case "amizade":
+                taxaEntrega = 7.00;
+                break;
+            case "vieira":
+                taxaEntrega = 10.00;
+                break;
+            default: 
+                taxaEntrega = 8.00;
+                break;
+        }
+        alert(`Taxa R$: ${taxaEntrega.toFixed(2)}`);
+    </script>
+
+
+</body>
+</html>
