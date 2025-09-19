@@ -13,6 +13,8 @@ Este repositório contém atividades práticas desenvolvidas durante o segundo s
 
 - 📁 `html-js/` → Atividades feitas com HTML e JavaScript direto nos arquivos `.html`
 - 📁 `php-html/` → Atividades feitas com PHP contendo HTML embutido (ex: formulários, lógicas simples)
+- 📁 `html-css-js/` → Atividades feitas com HTML, CSS Bootstrap e JavaScript externo
+- 📁 `php-js/` → Atividades feitas com PHP e JavaScript (geralmente com HTML embutido no PHP e scripts JS externos ou internos)
 
 ## Objetivo
 
