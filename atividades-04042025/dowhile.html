@@ -1,0 +1,24 @@
+<script>
+    let num;
+
+    do {
+        num = Number(prompt("Número: "));
+        if (num == 0 || isNaN(num)) { // Se num é inválido. "isNaN" = "Is Not a Number", para verificar se foi digitado uma letra, por exemplo.; 
+            alert("Digite um número válido...");
+        }
+    } while (num == 0 || isNaN(num)); // ...Enquanto num inválido
+    let pares = ` Pares entre 1 e ${num} : `;
+    for (let i = 2; i <= num; i = i + 2) {
+        if (i != num) {
+            if (i + 2 <= num) {
+                pares = pares + i + ", ";
+            } else {
+                pares = pares + i + ".";
+            }
+        } else {
+            pares = pares + i + ".";
+        }
+    }
+
+    alert(pares);
+</script>
